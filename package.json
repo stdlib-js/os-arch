@@ -1,0 +1,37 @@
+{
+  "name": "@stdlib/os-arch",
+  "version": "0.0.0",
+  "description": "Operating system CPU architecture.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/os-arch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "process",
+    "runtime",
+    "environment",
+    "platform",
+    "os",
+    "cpu",
+    "architecture",
+    "arch"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}

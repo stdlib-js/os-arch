@@ -22,7 +22,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Operating system CPU architecture.
+> Operating system CPU architecture for which the JavaScript runtime binary was compiled.
 
 <section class="installation">
 
@@ -37,6 +37,7 @@ Alternatively,
 -   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
 -   If you are using Deno, visit the [`deno` branch][deno-url].
 -   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
 The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
@@ -52,7 +53,7 @@ var ARCH = require( '@stdlib/os-arch' );
 
 #### ARCH
 
-Operating system CPU architecture.
+Operating system CPU architecture for which the JavaScript runtime binary was compiled.
 
 ```javascript
 console.log( ARCH );
@@ -62,6 +63,16 @@ console.log( ARCH );
 </section>
 
 <!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   In general, the target build architecture of the JavaScript runtime binary should match the host architecture; however, this is **not** guaranteed to always be true (e.g., if attempting to run an x64 build of Node.js on an arm64 host machine).
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 
@@ -93,10 +104,10 @@ if ( ARCH === 'arm' || ARCH === 'arm64' ) {
 
 ## Installation
 
-To use the module as a general utility, install the module globally
+To use as a general utility, install the CLI package globally
 
 ```bash
-npm install -g @stdlib/os-arch
+npm install -g @stdlib/os-arch-cli
 ```
 
 </section>
@@ -144,7 +155,7 @@ $ arch
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/os/platform`][@stdlib/os/platform]</span><span class="delimiter">: </span><span class="description">platform on which the current process is running.</span>
+-   <span class="package-name">[`@stdlib/os-platform`][@stdlib/os/platform]</span><span class="delimiter">: </span><span class="description">platform on which the current process is running.</span>
 
 </section>
 
@@ -208,6 +219,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+[cli-section]: https://github.com/stdlib-js/os-arch#cli
+[cli-url]: https://github.com/stdlib-js/os-arch/tree/cli
+[@stdlib/os-arch]: https://github.com/stdlib-js/os-arch/tree/main
 
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules

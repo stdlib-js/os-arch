@@ -22,45 +22,38 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Operating system CPU architecture.
+> Operating system CPU architecture for which the JavaScript runtime binary was compiled.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/os-arch
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ARCH = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ARCH = require( 'path/to/vendor/umd/os-arch/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ARCH;
-})();
-</script>
+var ARCH = require( '@stdlib/os-arch' );
 ```
 
 #### ARCH
 
-Operating system CPU architecture.
+Operating system CPU architecture for which the JavaScript runtime binary was compiled.
 
 ```javascript
 console.log( ARCH );
@@ -71,37 +64,88 @@ console.log( ARCH );
 
 <!-- /.usage -->
 
+<section class="notes">
+
+## Notes
+
+-   In general, the target build architecture of the JavaScript runtime binary should match the host architecture; however, this is **not** guaranteed to always be true (e.g., if attempting to run an x64 build of Node.js on an arm64 host machine).
+
+</section>
+
+<!-- /.notes -->
+
 <section class="examples">
 
 ## Examples
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var ARCH = require( '@stdlib/os-arch' );
 
 if ( ARCH === 'arm' || ARCH === 'arm64' ) {
     console.log( 'Running on ARM...' );
 } else {
     console.log( 'Running on something else...' );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/os-arch-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: arch [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ arch
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -111,7 +155,7 @@ if ( ARCH === 'arm' || ARCH === 'arm64' ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/os/platform`][@stdlib/os/platform]</span><span class="delimiter">: </span><span class="description">platform on which the current process is running.</span>
+-   <span class="package-name">[`@stdlib/os-platform`][@stdlib/os/platform]</span><span class="delimiter">: </span><span class="description">platform on which the current process is running.</span>
 
 </section>
 
@@ -176,6 +220,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
+[cli-section]: https://github.com/stdlib-js/os-arch#cli
+[cli-url]: https://github.com/stdlib-js/os-arch/tree/cli
+[@stdlib/os-arch]: https://github.com/stdlib-js/os-arch/tree/main
+
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
@@ -188,7 +236,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/os/platform]: https://github.com/stdlib-js/os-platform/tree/umd
+[@stdlib/os/platform]: https://github.com/stdlib-js/os-platform
 
 <!-- </related-links> -->
 

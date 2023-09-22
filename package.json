@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/os-arch",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Operating system CPU architecture for which the JavaScript runtime binary was compiled.",
   "license": "Apache-2.0",
   "author": {
@@ -41,8 +41,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/cli-ctor": "^0.0.3",
-    "@stdlib/fs-read-file": "^0.0.8"
+    "@stdlib/cli-ctor": "^0.1.0",
+    "@stdlib/fs-read-file": "^0.1.0"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.0.8",

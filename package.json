@@ -1,6 +1,6 @@
 {
-  "name": "@stdlib/os-arch-cli",
-  "version": "0.1.1",
+  "name": "@stdlib/os-arch",
+  "version": "0.2.0",
   "description": "Operating system CPU architecture for which the JavaScript runtime binary was compiled.",
   "license": "Apache-2.0",
   "author": {
@@ -16,6 +16,22 @@
   "bin": {
     "arch": "./bin/cli"
   },
+  "main": "./lib",
+  "browser": {
+    "process": "process/"
+  },
+  "directories": {
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "examples": "make examples"
+  },
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -26,8 +42,8 @@
   },
   "dependencies": {
     "@stdlib/cli-ctor": "^0.1.1",
-    "@stdlib/fs-read-file": "^0.1.1",
-    "@stdlib/os-arch": "0.1.1"
+    "@stdlib/fs-read-file": "^0.2.0",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.1.1",
@@ -37,6 +53,21 @@
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
   },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
   "keywords": [
     "stdlib",
     "stdutils",

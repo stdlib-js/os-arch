@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ARCH from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/os-arch/tags). For example,
+
+```javascript
 import ARCH from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@v0.2.2-deno/mod.js';
 ```
 
@@ -75,7 +80,7 @@ console.log( ARCH );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ARCH from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@v0.2.2-deno/mod.js';
+import ARCH from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@deno/mod.js';
 
 if ( ARCH === 'arm' || ARCH === 'arm64' ) {
     console.log( 'Running on ARM...' );

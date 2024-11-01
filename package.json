@@ -42,7 +42,8 @@
   },
   "dependencies": {
     "@stdlib/cli-ctor": "^0.2.2",
-    "@stdlib/fs-read-file": "^0.2.2"
+    "@stdlib/fs-read-file": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.2.2",

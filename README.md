@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ARCH from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@deno/mod.js';
+import ARCH from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@v0.2.3-deno/mod.js';
 ```
 
 #### ARCH
@@ -75,7 +75,7 @@ console.log( ARCH );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ARCH from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@deno/mod.js';
+import ARCH from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-arch@v0.2.3-deno/mod.js';
 
 if ( ARCH === 'arm' || ARCH === 'arm64' ) {
     console.log( 'Running on ARM...' );

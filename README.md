@@ -35,83 +35,19 @@ limitations under the License.
 
 > Operating system CPU architecture for which the JavaScript runtime binary was compiled.
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/os-arch
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
 
-</section>
 
-<section class="usage">
 
-## Usage
-
-```javascript
-var ARCH = require( '@stdlib/os-arch' );
-```
-
-#### ARCH
-
-Operating system CPU architecture for which the JavaScript runtime binary was compiled.
-
-```javascript
-console.log( ARCH );
-// => <string>
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   In general, the target build architecture of the JavaScript runtime binary should match the host architecture; however, this is **not** guaranteed to always be true (e.g., if attempting to run an x64 build of Node.js on an arm64 host machine).
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var ARCH = require( '@stdlib/os-arch' );
-
-if ( ARCH === 'arm' || ARCH === 'arm64' ) {
-    console.log( 'Running on ARM...' );
-} else {
-    console.log( 'Running on something else...' );
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -129,7 +65,7 @@ npm install -g @stdlib/os-arch-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: arch [options]
@@ -146,7 +82,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ arch
@@ -164,10 +100,9 @@ $ arch
 
 <section class="related">
 
-* * *
-
 ## See Also
 
+-   <span class="package-name">[`@stdlib/os-arch`][@stdlib/os-arch]</span><span class="delimiter">: </span><span class="description">operating system CPU architecture for which the JavaScript runtime binary was compiled.</span>
 -   <span class="package-name">[`@stdlib/os-platform`][@stdlib/os/platform]</span><span class="delimiter">: </span><span class="description">platform on which the current process is running.</span>
 
 </section>
@@ -187,7 +122,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -210,8 +145,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/os-arch.svg
-[npm-url]: https://npmjs.org/package/@stdlib/os-arch
+[npm-image]: http://img.shields.io/npm/v/@stdlib/os-arch-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/os-arch-cli
 
 [test-image]: https://github.com/stdlib-js/os-arch/actions/workflows/test.yml/badge.svg?branch=v0.2.3
 [test-url]: https://github.com/stdlib-js/os-arch/actions/workflows/test.yml?query=branch:v0.2.3
